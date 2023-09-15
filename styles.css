@@ -13,5 +13,16 @@ h1 {
     text-align: center;
 }
 .Geneva {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+    background-color: grey ;
+    background-color: beige; !important;
+
+}
+
+
+p{
+    color: beige;
 }
