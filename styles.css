@@ -1,18 +1,15 @@
 
+h1 {
+    font-family: helvetica;
+    font-size: 3vw;
+    text-align: center;
+    color: orange;
+}
 
-<style>
-
-body {
-    background-color: orange;
-
-    
-
-    }
-    h1{
-        color:orange ;
-        font-size: 3vw; 
-        font-family: Helvetica;
-        text-align: center;
-
-    }
-   
+.couriernew {
+    font-family: 'Courier New', Courier, monospace ;
+    color: orange;
+}
+.center {
+    text-align: center;
+}
