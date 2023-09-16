@@ -1,13 +1,43 @@
+@media screen and (min-width: 280px) {
+    
+    h3 {
+        display: block;
+    }
+    body {
+        background-color: #cccbaa;
+    }
+   
+
+}
+
+@media screen and (max-width: 600px) {
+
+    h3 {
+        display: none;
+    }
+    body {
+        background-color: #323232;
+    }
+}
+
+
 h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: orange;
     
 }
+
+h3 {
+    text-align: center;
+    font: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
 .flex-container {
     display: flex;
     justify-content: center;
-    background-color: #FFA559;
+    background-color: #96C291;
     flex-wrap: wrap;
     flex-direction: row;
     color: orange;
@@ -19,4 +49,11 @@ h1 {
     background-color: #454545;
     padding: 5px;
     margin: 6px;
+}
+.flex-container {
+    @media screen and (min-width: 600px) {
+        
+        flex-direction: column;
+        
+    }
 }
