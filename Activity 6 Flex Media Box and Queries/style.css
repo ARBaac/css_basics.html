@@ -3,3 +3,14 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: orange;
 }
+.flex-container {
+    color: orange;
+    text-align: center;
+    font-family: Verdana;
+
+}
+.flex-item {
+    background-color: #454545;
+    padding: 5px;
+    margin: 6px;
+}
