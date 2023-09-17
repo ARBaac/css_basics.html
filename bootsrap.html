@@ -10,7 +10,7 @@
 <body>
     <!-- Main Section -->
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold" href="#" >Bootstrap Exploration</a>
           <button class="navbar-toggler bg-light p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,17 +22,17 @@
                 <a class="nav-link active text-dark text-end" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">About</a>
+                <a class="nav-link text-dark" href="#About">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Learn HTML</a></li>
-                  <li><a class="dropdown-item" href="#">Learn CSS</a></li>
+                  <li><a class="dropdown-item" href="#Learn HTML">Learn HTML</a></li>
+                  <li><a class="dropdown-item" href="#Learn CSS">Learn CSS</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Learn Javascript</a></li>
+                  <li><a class="dropdown-item" href="#Learn Javascript">Learn Javascript</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -97,7 +97,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="https://web-dev.imgix.net/image/kheDArv5csY6rvQUJDbWRscckLr1/YDxKJ14tckrLzMXYZquR.png?auto=format&fit=max&w=1200&fm=auto" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Learn HTML</h5>
+                      <h5 id="Learn HTML" class="card-title">Learn HTML</h5>
                       <p class="card-text">With HTML you can create websites. Learn HTML now by clicking the link</p>
                       <a href="https://www.w3schools.com/html/default.asp" class="btn btn-primary">Click me!</a>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="card" style="width: 18rem;">
                         <img src="https://web-dev.imgix.net/image/foR0vJZKULb5AGJExlazy1xYDgI2/N5mplhgLlq9qzABgyYKQ.png?auto=format&fit=max&w=1200&fm=auto" class="card-img-top"alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Learn CSS</h5>
+                            <h5 id="Learn CSS" class="card-title">Learn CSS</h5>
                             <p class="card-text">Already have an HTML site? Let's give your HTML a color by using CSS</p>
                             <a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary">Click me!</a>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="card"   style="width: 18rem;">
                           <img src="https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/06/best-ways-to-learn-javascript.jpg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Learn Javascript</h5>
+                                <h5 id="Learn Javascript" class="card-title">Learn Javascript</h5>
                                 <p class="card-text"> Done with HTML and CSS? Try Javascript</p> 
                                 <a href="https://www.w3schools.com/js/default.asp" class="btn btn-primary">Click me!</a>
                             </div>
@@ -125,7 +125,21 @@
                     </div>
           <!-- End of Card Section -->
 
-          <!-- Contact Section -->
+          <!-- About Section -->
+          <section id="About" class="container">
+            <h3 class="text-center">About</h3>
+            <div class="row">
+                <div class="col-md">
+                    <p class="text-center p-4">W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                        Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+                        of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+                        
+                        Copyright 1999-2023 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+                        </p>
+                </div>
+            </div>
+          </section>
+          <!-- End of About Section -->
           
        <!-- End of Main Section -->
         <!-- Footer -->
