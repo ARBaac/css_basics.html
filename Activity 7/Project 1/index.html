@@ -15,7 +15,7 @@
 <body>
   <!-- NavBar -->
   <nav class="navbar navbar-expand-sm bg-dark fixed-top">
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <a class="navbar-brand fw-bold text-light" href="">Tiktok
         <img src="" alt="">
       </a>
@@ -24,15 +24,15 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="nav justify-content-center" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active text-light text-end" aria-current="page" href="#Home">For you</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light  " href="#About">Explore</a>
+            <a class="nav-link text-light  " href="#About">Live</a>
           </li>
-          <li class="nav-item dropdown justify-content-center">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false" href="#">
               TikTok Shop
@@ -46,8 +46,11 @@
             </ul>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-6 m-2 p-1 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
       </div>
-      
     </div>
   </nav>
   <!-- End of NavBar -->
@@ -56,7 +59,7 @@
   <main>
     <br>
     <div class="container text-center">
-      <div class="row align-items-end">
+      <div class="row align-items-center">
         <!-- First Col -->
         <div class="col">
           <h5 class="display-1 fw-bold m-2 p-4 ">Create, Inspire, Upload!</h5>
@@ -119,9 +122,9 @@
             <p class="card-text">Shoot your Thoughts</p>
             <a href="Login.html" class="btn btn-primary d-grid gap-2 d-md-block ">Click here!</a>
           </div>
-        </div>        
+        </div>
       </div>
-      <div class="col-md-3 m-5 p-5" >
+      <div class="col-md-3 m-5 p-5">
         <div class="card" style="width: 18rem;">
           <img
             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVEhgVFRYYGBgYGBgYGhgcGBoaGBgYGBgaGhgYGRgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISHzQrJCw0NDQ0NDQ0NDQ0NDE0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAYFBwj/xAA/EAACAQIDBAcGBAUDBAMAAAABAgADEQQSIQUxQVEGImFxgZHwEzKhscHRB0JSYhSCwuHxM5KiI3Ky0hUkU//EABsBAAMBAQEBAQAAAAAAAAAAAAABAgMEBQYH/8QAKREAAwACAgIBAwQCAwAAAAAAAAECAxESIQQxQSJRYQUTcYGhsSMykf/aAAwDAQACEQMRAD8A5tCnL9JJFRp+Mu00nHTPuKZJTWToIKLJlWQzGmEsMCMqwojJscR4yw4EsaOBHAjgQFsQEKICPaBLYwEeOBHtAWwLRWhWitANgWilDam2aOH99usdyDrM3co1mfrdNLHq0SB+91Q9+XWWoqvSIeWJ6bNfHAmWwvTFGNnQr2qQw+80WDxiVVzIwbnzHeN4iqKn2hzc16ZORFHtFaSUNFCjEQDY0UUYwGCYjHMYwGCRAIkhgwKREwkDpLLSNhA0llOospVlnScSpVjRtLOfkPKNLOXsil7NdklJZcQSFFlhB3yWZUyRBJhAROckAkmNMcQwsSwgIGbYoQEQEe0CRCPFHEBDiPFHAjJFFFFAQLOALk2Ezm3NvlbpSsDYlnbcijeSOHjr2Rbf2tlLKvvDQH9NxqR+43t3DtmF2njAoy36x1I49l7+ffN8WPl2zk8nOoXGffz+CHF4hmYkMVzXu7X9o/j+Udk5r0E538dfjIqjlje5PjJMNgnc2RWPhOvWjyW3TFhqljl4fad3Z+02QqyvldWsTwK2/NzBlVujldQDkN9SdNwlajRKE5t8l6o1x1UHr2yMeK9MPoGBKsOTDfbs3Hxl+0826G7a9nVam/uuRb9rD+2ngJ6QDOK541o9rHXKU0ORGMK8aQUCRGhQTEUhjBMOAYFDQTCMGA0CYDCG0AmItELiQOJZaQOIzWWVbRQ7RR7NSRElhBbhI0EmUQMqZIsMQFhiIyYQhiABDECGOIV4IMcRksIQhBEMQJY9orRXivAQ0p7TxopU2c8BYDmx0A85bdrC8xHS/al3VFOiDMeWZt3kPnLieT0RdcZdHH2lijlZzqfevzZjYH5+Ez2zdmVcRUsik3Op/wAzoYqrenbixDeG4Tf9AMIFog21InU3xno8hJZKbfx2QbA6BIqhqmrHhwHhNfg9hom4AeUupeTIZn79jba9HLxeyA3u2B8dfjMT0o6LvlNRFuRqZ6cVlfE0syFeYtGuu0CrfTPnpxbrAWIOvAgz1Portf8AiMOGPvr1X7wND4jXzmE6VYI0cQ6EWv1lPAg7/v4SLojtdsPXtvV7Ky9t+qw7QT5Ex5J5TtHT42TjXF+n/s9avHgKYU4z0tCjGIxQAUAwooFAGMYREExDQBgmEYJgUgWkDiTmRsIGkle0UO0UDTY6CTrIVkqxkUGIQMEQhAzYYhCCIYMCGOBCgCEIEsK8JYIMe8ZLCijXjFoBo5228atKmGbW5tl4nTWeVbRxrVXZjvdr+egHyE2vTGv1KpPBERezO5Lm3OyAec89pdY92ni2g8hczpwStNnF59OZU/2XMUQMttxS/wASR8FE9D6HbbopRCM6gjmwHznnu01ylByRf8fGdro5szDVqZzo91/MHVQLn97C+gG6aWk0efh3to9Yw20FfcQe6czbe3v4cE5SxO4DiZwui9MJXFJGL0xfW4Yqd9mIJHOazbmAull0NtW7JhtnRxmWk/kyuDx+0MVqpWgnO3XPdcGdrD4bEJa2JLbrh1DA/C4mQq4zEI+RVwwH6qjGp5LoF8BO7sXZNd2DvUyLb3aVMU1a/MOTm/2yt9fAnKT9dfc5/wCKGBzUqdYAZkYBrbsrb/C880T5ehPdds7M9rh3pNc5kIBO+9tD52nhz0yCRazKWXsJB1WaYq2mmTa1qkeldFNo50UHeARcWym1reNjNLeeedEauVkZdAzFHH/ge/h4megKZy2tU0e37ma+6CvHijSBDGNCgmIYiYBhXgwGgTBMMwDApDGRtJDAaBoiKKPFAoSyUSFJKDGSwxHEERxAlkghXkd4rwJ0SXjiAE7Y6oefnAlpEl44MC45fKODAWgiYzGNmjEwBIwXT6vYMo4sm7mFv/UfhM3s2hbKDvvf+Zh9Ba/fO101fNiCOR3dtgvldTOQWyJb8x0vy/UfnO3F1KR5XmPll39kkRbVq3ZT8Ozh9J1ejnRh8QBUspBJtmudxt7omaxFTM3y7vQE9N6FYwU8IDfcDHkepObBKqn0ajo3glp1DSPWdEViQAFW5ICgDsB57ppcSDbqgXO6+6eZ7M23XQvXVQ6u/u8bAZdDO5s3pG2J6mYo+twBcgc7sLTBPS7N7xN1v4OzgNo0at8yhXUlWXS6sDYidTOlrCZHbmxnU+2ok5xv/cOR5yHYG3/a3RwQ67xFya9jeJUty/6NRiW0Np5N0q2f7OliH3XxSBO9kaoxnqNN7755t+Jddly0rDK9Q1TzzJTRB8GMeF7onL9MNHP6IveoQNxKtbtv9rz0dTPM+g4vX8AfIfcfCekK0nOtUep4z5YZJwYgZGGhAzE10HeDFeK8AEYJjmCTAaGMExyYJMCkIwGEImMTApEdoo8UCtgLJAZEkkEYMMQhBEIREscDthjSR3hBoyWSKY5MjvGvAnRIYgYGe+noR80QaCvIa1QKpY8Bfy1nawGx8y5nYgHUAb7dsnxGxMM65WNwd4znXyM2nDT7OHL5+HG3O9v8Hhu1K5ao7neW8pyMRW5nU/Acp9B0+iGAA/0UPeL/ADlqnsPCJ7tFB/Iv2nZKSPGz+Xzf0r/J80obmajAVXFBgt7Aa/ee5V9k4aopRqaEEWsVE8x2ps5MFjPZj/SqDQH8tzYju+8jL3O0X4eVOuL9s5myduVDlw+HpozgXLOdNN9hNfsvYOOdialWnRuGt7NFuSDbefOY7aewSjB0zKy7yhKta+jC2+dbA1uoofE4l8t+owqcb3BOfrb+Mx3LW0ehwy/Gjpbef+FRgdoVXq6ZafVdiSAQCgW4B113bpQ6NYWslYPWsHdLsALW10B7bGaLYOAQAFaIQDcSFB1tchVAA3DXfOhjcMM4e26/0k2/p6EnxrTexK9tZ5n+JOID1KYHBqo/40frceE2u2MeadNygzOFZgvPKL6zyfb9Ul0RiSyU1LE//pVLVn05g1Av8krxp23Rj5NaSn7ne6B0v+o7clA8Tr95vA0x3QdctNjxZj/xA+5mtVpnme6Z7XjRxwyvwWAYQaRBoQMyNWiUNFeRgx7wJ0FmiMExQDQxjGOYxiKQxgmPeCYxoGKK8UCgV75KJCrQw0YNEohCRBoQaIhoMR4N4gYC0SReuyBeK8BaDMbSDGJgGjWMuenluQCvDunK2Z0eWjfrs1z+ZrnznQ2dUvTU9nylq89KHuUfG505y0vyxkSwtHtFeKUYinkv4tYllxFEgaWbx3aT1kzzb8YsNejTf9L/ADFoF43q00VOje2ExNNUdrOugJ3svDxE3WAwdMD3QTz3z5/weJCkalSNzDhNZgulWJVQocMBuPGc1YtPaPXjLznTfZ7LZQOAnF2ptEXyJq3y7TMXs/aeJrHr1LKeCgD4zUYOgoGnnxJ75lW/RpMqe2V/4a7AvqDcv/2AEv8AAGeQbZDDFVc281GY9udiwPkwnsm2NsYfDUz7VwGYGyDVyt7GyjmdLnTQzx7bOM9tVL5cosAOdhuLHibfITbBNLfXRz+Rc0l32jQdDsflYUjuYmx7bXsfKbhDPKNlYjLUDAi4Ia17XtvA7bXnpuGrhkVlIKsLgzPPOq2e74GT9zCu/XRdVpIpkCtDDTmZ1tE4McGRgwg0CGg7xXg3ivAWgjGMGK8A0MYJjmAzQKQ0Ua/ZFGXoBDJFHdKytJ1MYNEgMK8jBjiIlolvHBgAx7wJ0HeK8C8cQDQ7PaRtfeTYdn1MapVC6sbADee3/Egx+NWjR9qy6n3M24nhZd7HjfdbjGk36M8lrHO2aTo7iFamVH5SfjrOzMB+HW0DUqV8xJYuHJO8kqASeW7cNwAE3wnoQtSkfIeXXLNVfdjiK8VoiJRzjEzIfifhS+BcgXK2bTfoZsJUx2XJ1hcQb0tl41ukvyfM0dHKm4JHdPUOnPQ8ODiMOoBAuyj8w525zzApw4xzStbR1ZIcPsv4bbVZPdYeKgyTEbfxTg5q725Kcg8ltOZliy6HuMpQt+iHkprTZ1duH/7LoN1MikLnhSUU/jkv4mVEEv8ASFLYytb8zl/94D/1SqievXhNJRzWwRQXlOxsbaZoG2Zin6L38uU5um716vHPrvjrHNLTRWHycmGlUPTN5gdtpUBIzC28kdUX3XYaDxtOqlS4B7IH4XUh/DVXI96pl8FQG3m5mqr7LpNuUKea6fDdPLzYVNNSfTeL+pc4Tyrv7ozqtDzS3iNkMvunMOW4yiQQbEEHiDpOdpr2ejOSLW5eyS8e8jBj3iK0HeMTGJgkwDQRMjYxyYLGMpIG8UjzRRlaIkaToZUptLCtGymicGOGkYhiIhoMGPeDFeAtBwXbSDmg1HsCf8eMBaKGOxSUjnc5m4Lf5DgN+sx22NsPXqF3a54DcqLwC8h28YW28aWbS56xtp71vzEHv0HATjohYhVuzMbcyzHcBznZix6W2eL52flXFfBs/wANMXbGMm4Mmg7Qf7z2BEmD6EdE/wCGtXq/6hG7goPDtPbNrVxyqN8qsiR5VYHdcizoJE+KRd8zuN22WbKmsDD03c3YyJqqfSC5xYl9T7+yNElYNukWNpZ6bDsMHDJYS2F0PdOg4u29oxPRjbAfNTfejFSO42nL6cdCQ6nEYYAMASyDc4tvH7pycU/sto1BSur57tSOgqZrHNSP6rb0Ot75b+6PQ9jY72iWbiJzveG+vT9Hqz/z4k37+TwI0944i/hbSN7P167ptenvR/8Ah63tU9yobn9rb/I2nD2ZQVVNeooKIwVUO6rVIBCEfpW+Z+zKu9wZ3Q1S2jzKTmmmBttT7braN7LDZr7w38NSz37Q179oMpAevXjJalRndnYlmdizMd5ZjdifFjBHP1z+rTRLRlT2xKPt9PtEx9eH9ovXrxWMTr653+sZB6V+FuJU0KlO4zB89uOVlVb+a/ETeBZ8/YPFPRqK9NijLxBt6G7s3zcbM/EeothWpK+7rKcjeI1BPlOTLhqq5I78PkzMqWelZJWxmBV1138DxE4+zenOEq2BdqZPB10/3LcDxtNErqyhlIZTqCCCCOwjfOa8bXtHbi8jvcsx9VCjFTvHq8V5d26lmU8xby/zOcDONrTPpMVc4VfcPNHvAvGvA00FeRuY5Mjdo0NIbNFI80UZpor0mlpDOdSeWqbS6Q2i4rQw0hUwgZBm0S3jgyPNHDQJ0GTOPt7FlaZVT1spcn9KKd57zYW43PIzpu4VSzGwAJJ5AC5mL6Q4km6D3nClwNSCdQmnBVy958ZpjndGOeuENnDxuIDtZQcqgKOZtv8AEm58Z6H0B6LFLYmsLNbqKfyjn3mZjoPgVqYtM4ui5mA7QRYnt1E9hrscuVRpOq60tI+fpN1yr5K+P2gALThktVOhNp0KuxnqmzXVTvtvnUwGy6dFMqjdzNz8ZzzLdcqFmeo4w+37KGA2ZbhO1SwgUayF8Yqzm7R6RJTGrDum37q9HLPir2+/5Ow9YLHpYgtuHjObgHWqgqO2h1Ak7bSROIk8mu2zoWOfUo4O2OgC4qv7Z3ZTpooHDdqZ28HsD2SgB2YjixuT3njDbbyKNWHnIx0gpv7rgwqppdv0ExklvivZX6Q7IGJw70232NjyPAzyHb9I06vsNwoqEA1sXylqj/zOxN+QUcBPcKOJDDfMB+JexySmIRb8KhHIkWJ7rHzm+C0nr4Obycba38o87I+v9X2ERHrxI/qjKd3h/T944P0/pnaeaK/H1vU/UwG+n0P2iJ9eH9pFVb15xNlJErnX165+cYV1GvDnz7pWd76evW6S0UtrYk2Oug4cPOLfZfFJdkwr33Kx367uG+drYfSCthXvTLZb9ZGN0bcPA6jUTkZuYI39vC0K/wA//X6xtJrTM1XF7XR6lU2umKoJWTTWzLxRrag/eV80xfReowqso91kBI4ZlsFP/IzWo3OeP5GNTbSPt/0u3k8VN/wWQYryJG53hFpgehodjInaOzSB3jSGkLPFIM8UvRWirReXKbzj4erOhReaVJTR0EeSgyqjSdGmTRm0TCPeBeK/ZETog2g3/Tt+pkU9xcZh5XHjMnjUzURVuM1St3WAz6X5XuZrcXTzoV46Ed4Nx8QJjsXmKpRAtkci2t81za/LTXxvNsRz+SvpNX+GmDGR3tezEBuPD7T02mFVZlOjWA/h8Ki8bXPeZafHMTlAMurSez5+5dP+Dr4rHgbpn9obfCC5PgJ0E2eW1aP/APG0lNyAT2yXyoJ4T+TI1KuKxJ6iFF/U32l7BdElPWrOXPwmifFIotcATg47pCiNlU37pO0vRWnXwWcbhvZpZDYDhMzUpVHb3ideEvVNrq+rEzVbJw9MUwwA11jUJvbZLzVK4yv7MdiOiNWqVs5VePP1umkTooq01RDbKBrxOk7VfHIg3gSpT24hNswl05a4v0TCyJ8lvf3KWFwFam1r3WdiogamVcaEHfHTFhtxElqkFD3QiVK6Fd1T+pHge06ISvURfdVyB3XFpUA3eH0nS24mXFVB+/8AqWc8DTwHyU/SenPcpnjWtU1+SN/Xl/eVarXvLjkD165ShWbWKisfZJhh+Y+EuLUHMf5P2Egw9MWBPrj9JbVQBu9AfcxynonJSbHXXdrf+pvtBc8fWpJ+giKAcNRy7F+5jNy8PXkfOUZ9Hb6Mi3tG55VHxP2mkV/GcDYqZaQP6iT9B8p1Uf1wnk5/qts+/wD0zFw8XGvxv/0vI/r+0IvKmbtjNVt6+kw4nbxLDvK9SpAerK1WrLmSkgvaRSkasU04D0VaTzoUa0UUuhfBdp1ZYSpFFMGJkyvDvFFJIYLPK+wMKlfGM9urSAv+5tbadkeKVHycPnU1j6Npin00lWnXCG51iilUeKvRYba99AJTxOIdtBFFI22aKJXooPsJnN3c25AwamzKNIaLrz3mKKKupHNNs4O19r0qelrnuh0ukJ9l1CdBuiimjhcECp/uOfg59GriMU2VW+NgJo9n9CX0LVLHs+8UUaSKzW51o0uztg+z31GbvnUalZYopSSXo4qp1XZ5B07wRp4jOB1Xsd/EMOEyhe/rsMUU7sTfBHn+RKWRkLt69d8gIuQOZjxSmTPo6VJfXrxkw+3xN4opsjkoHf65tf6SMn5f3+sUUGNGgwL2RR2CXlqxRTycn/Zn6X46X7Mfwv8ARJ7WM1TSKKQaldqxlarUvFFNJQFbNFFFLJ2z/9k="
@@ -139,22 +142,25 @@
     <section id="About" class="container">
       <h5 class="text-center">About</h5>
       <div class="row">
-          <div class="col-md">
-              <p class="text-center p-4">
-                TikTok is the leading destination for short-form mobile video. Our mission is to inspire creativity and bring joy.
-                TikTok's global headquarters are in Los Angeles and Singapore, and its offices include New York, London, Dublin, Paris, Berlin, Dubai, Jakarta, Seoul, and Tokyo.
-                  </p>
-          </div>
+        <div class="col-md">
+          <p class="text-center p-4">
+            TikTok is the leading destination for short-form mobile video. Our mission is to inspire creativity and
+            bring joy.
+            TikTok's global headquarters are in Los Angeles and Singapore, and its offices include New York, London,
+            Dublin, Paris, Berlin, Dubai, Jakarta, Seoul, and Tokyo.
+          </p>
+        </div>
       </div>
     </section>
     <!-- End of About Section -->
-<!-- Footer Section -->
+    <!-- Footer Section -->
     <div class="row">
-          
-      <div class="col-md fw-bold text-center bg-light text-dark d-none d-sm-block">All Rights Reserved ® Base-404 Activities
+
+      <div class="col-md fw-bold text-center bg-light text-dark d-none d-sm-block">All Rights Reserved ® Base-404
+        Activities
       </div>
-  <!-- End of Footer Section -->
-  </div>
+      <!-- End of Footer Section -->
+    </div>
   </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
