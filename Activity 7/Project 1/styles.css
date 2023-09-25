@@ -77,3 +77,8 @@ background: #eee;
   .main-footer {
     grid-area: footer;
   }
+
+  .brlarge {
+    display: block;
+    margin-bottom: 20em;
+}
